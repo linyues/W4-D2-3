@@ -1,6 +1,14 @@
 package com.thoughtworks.collection;
 
 public interface SingleLink<T> {
-    public void addTailPointer(T item);         //æ·»åŠ å°¾æŒ‡é’ˆ
+    public T getHeaderData();
+    public T getTailData();
+    public int size();
+    public boolean isEmpty();
+    public boolean deleteFirst();
+    public boolean deleteLast();                //É¾³ıÎ²²¿ÔªËØ£»
+    public void addHeadPointer(T item);    //Ìí¼ÓÍ·Ö¸Õë
+    public void addTailPointer(T item);         //Ìí¼ÓÎ²Ö¸Õë
     public T getNode(int index);
 }
+

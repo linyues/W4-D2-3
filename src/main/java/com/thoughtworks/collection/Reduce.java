@@ -44,7 +44,7 @@ public class Reduce {
     }
 
     public int getIndexOfFirstEven() {
-        for (int i = 0; i < = arrayList.size() ; i++) {
+        for (int i = 0; i <= arrayList.size() ; i++) {
             if(arrayList.get(i) % 2 == 0){
                 return i;
             }

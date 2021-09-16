@@ -43,6 +43,8 @@ public class Add {
 
     public List<Integer> getTripleOfOddAndAddTwo(List<Integer> arrayList) {
 
+        for (int i = 0; i < arrayList.size(); i++) {
+            int val = arrayList.get(i);
             if(val % 2 == 1){
                 arrayList.set(i,val * 3 + 2);
             }
